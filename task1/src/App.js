@@ -39,10 +39,9 @@ function App() {
             <h2 className='text-3xl font-bold text-green-500 '> Create Account </h2>
             <div className='flex gap-2 my-5 justify-center'>
               {
-                socialMedia.map((item) => {
+                socialMedia.map((item, index) => {
                   return (
-
-                    <div className='border-[1px] border-gray-400/50 rounded-full'>
+                    <div className='border-[1px] border-gray-400/50 rounded-full' key={item + index}>
                       <SocialMedia Icon={item} />
                     </div>
                   )
